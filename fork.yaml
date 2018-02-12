@@ -1,0 +1,13 @@
+upstream:
+  repo: https://github.com/ros-controls/ros_control
+  ref: 0.13.0
+
+fork:
+  repo: git@gitlab.clearpathrobotics.com:forks/ros_control.git
+  branch: kinetic-devel-fork
+  tag: fork-%Y%m%d
+  apply:
+  - patch: https://github.com/ros-controls/ros_control/pull/301.patch
+    name: "Upstream PR 301: CompositeController template"
+  - patch: https://github.com/ros-controls/ros_control/pull/302.patch
+    name: "Upstream PR 302: Variadic Controller template"
