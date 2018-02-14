@@ -7,7 +7,7 @@ fork:
   branch: kinetic-devel-fork
   tag: fork-%Y%m%d
   apply:
-  - patch: https://github.com/ros-controls/ros_control/pull/301.patch
+  - patch: https://github.com/ros-controls/ros_control/pull/301.diff
     name: "Upstream PR 301: CompositeController template"
-  - patch: https://github.com/ros-controls/ros_control/pull/302.patch
+  - patch: https://github.com/ros-controls/ros_control/pull/302.diff
     name: "Upstream PR 302: Variadic Controller template"
