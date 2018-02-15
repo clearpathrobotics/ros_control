@@ -1,11 +1,11 @@
 upstream:
-  repo: https://github.com/ros-controls/ros_control
+  repo: git@gitlab.clearpathrobotics.com:forks/ros_control.git
   ref: 0.13.0
 
 fork:
   repo: git@gitlab.clearpathrobotics.com:forks/ros_control.git
   branch: kinetic-devel-fork
-  tag: fork-%Y%m%d
+  tag: fork-%Y%m%d-%H%M%S
   apply:
   - patch: https://github.com/ros-controls/ros_control/pull/301.diff
     name: "Upstream PR 301: CompositeController template"
