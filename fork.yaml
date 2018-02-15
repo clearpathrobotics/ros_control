@@ -8,9 +8,11 @@ fork:
   tag: fork-%Y%m%d-%H%M%S
   apply:
   - patch: https://github.com/ros-controls/ros_control/pull/301.diff
-    name: "Upstream PR 301: CompositeController template"
+    name: "Upstream PR 301: CompositeController template."
   - patch: https://github.com/ros-controls/ros_control/commit/a65fb8cc.diff
     name: "Revert a65fb8cc to resolve merge conflicts."
     reverse: True
   - patch: https://github.com/ros-controls/ros_control/pull/302.diff
-    name: "Upstream PR 302: Variadic Controller template"
+    name: "Upstream PR 302: Variadic Controller template."
+  - patch: http://gitlab.clearpathrobotics.com/snippets/72/raw
+    name: "Un-deprecate MultiInterfaceController."
