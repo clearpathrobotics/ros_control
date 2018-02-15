@@ -4,7 +4,7 @@ upstream:
 
 fork:
   repo: git@gitlab.clearpathrobotics.com:forks/ros_control.git
-  branch: kinetic-devel-fork
+  branch: fork-latest
   tag: fork-%Y%m%d-%H%M%S
   apply:
   - patch: https://github.com/ros-controls/ros_control/pull/301.diff
