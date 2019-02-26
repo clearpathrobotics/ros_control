@@ -1,3 +1,7 @@
+
+# This fork.yaml file describes how the internal version is created from the upstream version and a series of patches.
+# Documentation on https://github.com/mikepurvis/forkyeah and 
+# https://wiki.clearpathrobotics.com/display/SI/Managing+Forks#ManagingForks-PatchManagement
 upstream:
   repo: git@gitlab.clearpathrobotics.com:forks/ros_control.git
   ref: 0.13.0
@@ -16,3 +20,5 @@ fork:
     name: "Upstream PR 302: Variadic Controller template."
   - patch: http://gitlab.clearpathrobotics.com/snippets/72/raw
     name: "Un-deprecate MultiInterfaceController."
+  - patch: https://github.com/mikepurvis/ros_control/commit/29bfb7850aaa6c2b4accbd0ca365c61f0cd8dd5b.diff
+    name: "Switched from something that works only for gcc to something that works for gcc and clang."
