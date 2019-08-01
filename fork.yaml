@@ -4,7 +4,7 @@
 # https://wiki.clearpathrobotics.com/display/SI/Managing+Forks#ManagingForks-PatchManagement
 upstream:
   repo: git@gitlab.clearpathrobotics.com:forks/ros_control.git
-  ref: 0.13.0
+  ref: 0.15.1
 
 fork:
   repo: git@gitlab.clearpathrobotics.com:forks/ros_control.git
