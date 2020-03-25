@@ -13,5 +13,8 @@ fork:
   apply:
   - patch: https://github.com/ros-controls/ros_control/pull/387.diff
     name: "Upstream PR 387: Variadic Controller + CompositeController"
-  - patch: http://gitlab.clearpathrobotics.com/snippets/113/raw
-    name: "TOOL-2651: increase spawner timeout."
+  - patch: http://gitlab.clearpathrobotics.com/snippets/133/raw
+    name: "CORE-15926: Increase the controller timeout"
+  - patch: http://gitlab.clearpathrobotics.com/snippets/134/raw
+    name: "CORE-15926: SPAWNER: Wait for the clock to be available before proceeding"
+    
