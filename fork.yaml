@@ -22,5 +22,5 @@ fork:
     name: "Un-deprecate MultiInterfaceController."
   - patch: https://github.com/mikepurvis/ros_control/commit/29bfb7850aaa6c2b4accbd0ca365c61f0cd8dd5b.diff
     name: "Switched from something that works only for gcc to something that works for gcc and clang."
-  - patch: http://gitlab.clearpathrobotics.com/snippets/113/raw
-    name: "TOOL-2651: increase spawner timeout."
+  - patch: http://gitlab.clearpathrobotics.com/snippets/134/raw
+    name: "CORE-15926: SPAWNER: Wait for the clock to be available before proceeding"
